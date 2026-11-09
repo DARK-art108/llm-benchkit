@@ -1,0 +1,61 @@
+{
+  "runtime_version": "version: 0.8.0-dev (build 1, commit 5220213)\nbuilt with AppleClang 15.0.0.15000309 for Darwin arm64",
+  "source_revision": "522021325546ea322b0b1e58a50f9dbf03a5f197",
+  "power_thermal": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+  "release_dates": {
+    "LFM3-1.7B": "2026-10-27",
+    "Spark-X2.6-4B": "2026-10-21",
+    "Qwen3.5-4B": "2026-03-02"
+  },
+  "release_sources": {
+    "LFM3-1.7B": "https://www.liquid.ai/blog/lfm3",
+    "Spark-X2.6-4B": "https://github.com/XHToken/Spark-X2.6#release",
+    "Qwen3.5-4B": "https://github.com/QwenLM/Qwen3.8#news"
+  },
+  "scope": "Three local models, fixed synthetic code prompts and 27 unit test cases across 3 coding tasks; not SWE-bench and not an API comparison with hosted Claude/GPT.",
+  "notes": [
+    "Downloads and checksum work finish before measured trials.",
+    "One model loaded at a time.",
+    "No speculative decoding.",
+    "Each coding task has up to 10 assistant turns; tests cannot be modified.",
+    "Generated fixture code executes without network or write access outside its fixture directory.",
+    "User applications remain open; no system memory purge or OS modifications.",
+    "Raw speed uses greedy decoding and 128 generated tokens, with two repetitions at each size; prefix reuse is disabled.",
+    "Initial 8K-capacity speed trials cover 1K, 4K and 7K input. Additional 4K trials use 16K capacity for all three GGUF models.",
+    "Final coding uses the sampling and reasoning settings above. Earlier small-output-budget and greedy calibration attempts are excluded from the final coding ranking.",
+    "All models passed three basic structured tool-call probes in fast mode; these probes do not measure successful editing.",
+    "MLX uses a different affine 4-bit checkpoint, mlx-lm 0.32.2, and prefill_step_size=2048; its separate coding trial used thinking disabled and greedy sampling, so it is not a controlled backend-only quality comparison.",
+    "Hand-written reference controls passed all 27 checks; controls are not model results.",
+    "One long Qwen tool response averaged 6.47 tokens/sec, despite much higher short plain-completion throughput. No thermal warning was reported at the diagnostic snapshot.",
+    "No hosted Claude or GPT model was tested. This small fixture suite is not SWE-bench or an all-day stability test."
+  ],
+  "final_coding_settings": {
+    "max_output_tokens_per_turn": 4096,
+    "max_reasoning_tokens_per_turn": 512,
+    "max_assistant_turns": 10,
+    "sampling": {
+      "LFM3-1.7B": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 0
+      },
+      "Qwen3.5-4B": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20
+      },
+      "Spark-X2.6-4B": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 0
+      }
+    },
+    "contexts": {
+      "ttl_lru_cache": 8192,
+      "money_multifile": 8192,
+      "javascript_concurrency": 16384
+    },
+    "history": "Full tool conversation retained, including assistant reasoning where provided by the API."
+  },
+  "finished_at": "2026-11-09T14:34:48.232709+00:00"
+}

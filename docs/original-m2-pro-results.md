@@ -1,5 +1,7 @@
 # Original M2 Pro experiment
 
+The complete [published example](../examples/results/apple-m2-pro-16gb/README.md) now includes the full report, summarized CSV/JSON, raw observations, methodology, final coding transcripts and engine logs.
+
 Measured November 9, 2026 using the earlier, machine-specific harness. These are historical observations, **not results produced by the new portable CLI**. They motivated the separation of engine timings, observed latency, code correctness and incomplete coverage in BenchKit. No model weights are included in this repository.
 
 Hardware: MacBook Pro, Apple M2 Pro (10 CPU / 16 GPU cores), 16 GB unified memory, macOS 15.5. llama.cpp revision `522021325546ea322b0b1e58a50f9dbf03a5f197`, with a local BF16 Metal constexpr compatibility patch. User apps remained open and substantial swap was already allocated.

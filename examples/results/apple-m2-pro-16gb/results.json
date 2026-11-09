@@ -1,0 +1,1338 @@
+{
+  "started_at": "2026-11-09T13:34:50.560922+00:00",
+  "hardware": "Apple M2 Pro, 10 CPU cores, 16 GPU cores, 16 GB unified memory, macOS 15.5",
+  "engine": "llama.cpp 522021325546ea322b0b1e58a50f9dbf03a5f197, local BF16 constexpr compatibility patch",
+  "settings": {
+    "ctx": 8192,
+    "gpu_layers": 99,
+    "threads": 6,
+    "parallel": 1,
+    "flash_attention": "on",
+    "batch": 2048,
+    "ubatch": 512,
+    "thinking": false,
+    "temperature": 0,
+    "prompt_cache_speed_tests": false
+  },
+  "models": [
+    {
+      "repo": "LiquidAI/LFM3-1.7B-GGUF",
+      "file": "LFM3-1.7B-Q4_K_M.gguf",
+      "bytes": 1099627808,
+      "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+      "revision": "cd0c74c575b5c416f3011b5b4c298077f26ca8c2",
+      "swap_before": "vm.swapusage: total = 16384.00M  used = 15188.50M  free = 1195.50M  (encrypted)",
+      "speed": [
+        {
+          "target_tokens": 1024,
+          "actual_prompt_tokens": 1024,
+          "output_tokens": 128,
+          "prefill_tps": 1074.5478032108413,
+          "decode_tps": 110.93950914071672,
+          "ttft_seconds": 0.9536562919965945,
+          "wall_seconds": 2.098549999995157,
+          "max_decode_gap_seconds": 0.010360707994550467,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1024,
+            "prompt_ms": 952.959,
+            "prompt_per_token_ms": 0.9306240234375,
+            "prompt_per_second": 1074.5478032108413,
+            "predicted_n": 128,
+            "predicted_ms": 1144.768,
+            "predicted_per_token_ms": 9.01392125984252,
+            "predicted_per_second": 110.93950914071672
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 1024,
+          "actual_prompt_tokens": 1024,
+          "output_tokens": 128,
+          "prefill_tps": 1263.1277708015186,
+          "decode_tps": 110.80023067386605,
+          "ttft_seconds": 0.8113921249751002,
+          "wall_seconds": 1.957629749958869,
+          "max_decode_gap_seconds": 0.010720000020228326,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1024,
+            "prompt_ms": 810.686,
+            "prompt_per_token_ms": 0.791685546875,
+            "prompt_per_second": 1263.1277708015186,
+            "predicted_n": 128,
+            "predicted_ms": 1146.207,
+            "predicted_per_token_ms": 9.025251968503937,
+            "predicted_per_second": 110.80023067386605
+          },
+          "repeat": 2
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 1263.727533432782,
+          "decode_tps": 104.17196412547226,
+          "ttft_seconds": 3.242370749998372,
+          "wall_seconds": 4.461764250008855,
+          "max_decode_gap_seconds": 0.021691540954634547,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 3241.205,
+            "prompt_per_token_ms": 0.791309814453125,
+            "prompt_per_second": 1263.727533432782,
+            "predicted_n": 128,
+            "predicted_ms": 1219.138,
+            "predicted_per_token_ms": 9.599511811023621,
+            "predicted_per_second": 104.17196412547226
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 1264.948691753992,
+          "decode_tps": 106.5586424932373,
+          "ttft_seconds": 3.2392330410075374,
+          "wall_seconds": 4.4312299999874085,
+          "max_decode_gap_seconds": 0.010796499962452799,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 3238.076,
+            "prompt_per_token_ms": 0.7905458984375,
+            "prompt_per_second": 1264.948691753992,
+            "predicted_n": 128,
+            "predicted_ms": 1191.832,
+            "predicted_per_token_ms": 9.384503937007874,
+            "predicted_per_second": 106.5586424932373
+          },
+          "repeat": 2
+        },
+        {
+          "target_tokens": 7168,
+          "actual_prompt_tokens": 7168,
+          "output_tokens": 128,
+          "prefill_tps": 1235.0043797169826,
+          "decode_tps": 102.45537947213697,
+          "ttft_seconds": 5.805539999972098,
+          "wall_seconds": 7.045540874998551,
+          "max_decode_gap_seconds": 0.01228925003670156,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7168,
+            "prompt_ms": 5804.028,
+            "prompt_per_token_ms": 0.8097137276785714,
+            "prompt_per_second": 1235.0043797169826,
+            "predicted_n": 128,
+            "predicted_ms": 1239.564,
+            "predicted_per_token_ms": 9.760346456692915,
+            "predicted_per_second": 102.45537947213697
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 7168,
+          "actual_prompt_tokens": 7168,
+          "output_tokens": 128,
+          "prefill_tps": 1236.4463964780598,
+          "decode_tps": 103.82280471993185,
+          "ttft_seconds": 5.798798458999954,
+          "wall_seconds": 7.022484834014904,
+          "max_decode_gap_seconds": 0.01121295802295208,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7168,
+            "prompt_ms": 5797.259,
+            "prompt_per_token_ms": 0.8087693917410714,
+            "prompt_per_second": 1236.4463964780598,
+            "predicted_n": 128,
+            "predicted_ms": 1223.238,
+            "predicted_per_token_ms": 9.631795275590552,
+            "predicted_per_second": 103.82280471993185
+          },
+          "repeat": 2
+        }
+      ],
+      "coding": [
+        {
+          "id": "ttl_lru_cache",
+          "passed": false,
+          "seconds": 65.55193587497342,
+          "writes": 2,
+          "api_calls": 10,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nFAILED (failures=6)\n",
+            "seconds": 0.09805454104207456
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "...F.E..\n======================================================================\nERROR: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 18, in test_nonpositive_ttl\n    self.c.put('b',1,-2); self.assertEqual(self.c.get('b','x'),'x')\n    ~~~~~~~~~~^^^^^^^^^^\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/cache.py\", line 16, in put\n    self._remove(key)\n    ~~~~~~~~~~~~^^^^^\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/cache.py\", line 40, in _remove\n    del self.items[key]\n        ~~~~~~~~~~^^^^^\nKeyError: 'b'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 1\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=1, errors=1)\n",
+            "seconds": 0.0644368749926798
+          }
+        },
+        {
+          "id": "money_multifile",
+          "passed": false,
+          "seconds": 39.56376962503418,
+          "writes": 0,
+          "api_calls": 6,
+          "errors": [
+            "Available file paths: money.py, checkout.py, README.txt, tests.py (read-only)",
+            "Available file paths: money.py, checkout.py, README.txt, tests.py (read-only)",
+            "Available file paths: money.py, checkout.py, README.txt, tests.py (read-only)"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "================================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.003s\n\nFAILED (failures=10)\n",
+            "seconds": 0.06719149998389184
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "================================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nFAILED (failures=10)\n",
+            "seconds": 0.12673550000181422
+          }
+        },
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 63.26697412499925,
+          "writes": 0,
+          "api_calls": 4,
+          "errors": [
+            "Unterminated string starting at: line 1 column 33 (char 32)",
+            "HTTP 500: {\"error\":{\"code\":500,\"message\":\"Failed to parse tool call arguments as JSON: [json.exception.parse_error.101] parse error at line 1, column 14994: syntax error while parsing value - invalid string: missing closing quote; last read: '\\\"async function mapLimit(items, limit, mapper) {\\\\n  // Validate limit: must be a positive integer (finite). NaN/Infinity and non-integer values reject.\\\\n  if (typeof limit !== 'number' || !Number.isInteger(limit) || !Number.isFinite(limit)) {\\\\n    throw new RangeError('Invalid limit: ' + limit);\\\\n  }\\\\n\\\\n  const results = [];\\\\n  // Track concurrent mapper calls to enforce at most `limit` active simultaneously.\\\\n  let activeCount = 0;\\\\n  // Use a queue of items and process sequentially up to `limit` concurrently.\\\\n  // We need to preserve input order, so we iterate over items in order,\\\\n  // but allow up to `limit` promises running at once.\\\\n  const taskQueue = [...items]; // shallow copy; items are not mutated\\\\n  let index = 0;\\\\n  while (index < taskQueue.length) {\\\\n    // Run at most `limit` tasks concurrently, processing each item exactly once.\\\\n    const pending = [];\\\\n    for (let i = 0; i < limit && index < taskQueue.length; i++) {"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.32625\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.942458\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.065\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.176875\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.159709\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.504917\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.753125\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 86.137917\n",
+            "seconds": 0.1709254999877885
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 16.374833\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.654292\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.060541\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.164291\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.148167\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.0385\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.723375\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 62.175292\n",
+            "seconds": 0.10608929197769612
+          },
+          "context_capacity": 16384
+        }
+      ],
+      "load_seconds": 1.0316989999846555,
+      "tool_probes": [
+        {
+          "id": "read_before_edit",
+          "passed": true,
+          "seconds": 0.4318210839992389,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "read_file",
+                  "arguments": "{\"path\":\"src/config.py\"}"
+                },
+                "id": "rjKkO9j2ezNtGlWZ69cimlHuJEKXOwrk"
+              }
+            ]
+          }
+        },
+        {
+          "id": "search_symbol",
+          "passed": true,
+          "seconds": 0.4171056250343099,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "search_code",
+                  "arguments": "{\"query\":\"normalize_user\"}"
+                },
+                "id": "wZSi4FnIyK3RkzjkhjB23f9wV7dpTqmC"
+              }
+            ]
+          }
+        },
+        {
+          "id": "run_tests",
+          "passed": true,
+          "seconds": 0.3871569589828141,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "run_tests",
+                  "arguments": "{}"
+                },
+                "id": "h84MObfoPgzYwnnMD2B3vjQfl0Flg4ig"
+              }
+            ]
+          }
+        }
+      ],
+      "peak_server_rss_mb": 1348.75,
+      "metal_log_evidence": [],
+      "swap_after": "vm.swapusage: total = 16384.00M  used = 16016.19M  free = 367.81M  (encrypted)",
+      "initial_coding_1600": [
+        {
+          "id": "ttl_lru_cache",
+          "passed": false,
+          "seconds": 13.352231541997753,
+          "writes": 2,
+          "api_calls": 10,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=6)\n",
+            "seconds": 0.0735249170102179
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF.F..FF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "seconds": 0.04127987497486174
+          }
+        },
+        {
+          "id": "money_multifile",
+          "passed": false,
+          "seconds": 20.570088583044708,
+          "writes": 1,
+          "api_calls": 4,
+          "errors": [
+            "Unterminated string starting at: line 1 column 30 (char 29)",
+            "HTTP 500: {\"error\":{\"code\":500,\"message\":\"Failed to parse tool call arguments as JSON: [json.exception.parse_error.101] parse error at line 1, column 5596: syntax error while parsing value - invalid string: missing closing quote; last read: '\\\"from decimal import Decimal, ROUND_HALF_UP\\\\n\\\\ndef line_total(price, quantity, discount_percent=0):\\\\n    # Validate inputs\\\\n    if not isinstance(price, (int, float, str)):\\\\n        raise ValueError(\\\\\\\"price must be numeric\\\\\\\")\\\\n    try:\\\\n        price_dec = Decimal(str(price))\\\\n    except Exception:\\\\n        raise ValueError(\\\\\\\"price must be convertible to Decimal\\\\\\\")\\\\n    if price_dec < 0 or not math.isfinite(price_dec):\\\\n        raise ValueError(\\\\\\\"price non-negative and finite\\\\\\\")\\\\n    \\\\n    # quantity: must be integer, non-negative. bool is subclass of int -> reject.\\\\n    if isinstance(quantity, bool):\\\\n        raise ValueError(\\\\\\\"quantity must be an integer (bool rejected)\\\\\\\")\\\\n    try:\\\\n        qty = int(quantity)\\\\n    except Exception:\\\\n        raise ValueError(\\\\\\\"quantity must be convertible to int\\\\\\\")\\\\n    if qty < 0 or not math.isfinite(qty):\\\\n        raise ValueError(\\\\\\\"quantity non-negative and finite\\\\\\\")\\\\n"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "================================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nFAILED (failures=10)\n",
+            "seconds": 0.048459957994055
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "-------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/checkout.py\", line 4, in checkout\n    subtotal = sum(line_total(i['price'], i['quantity']) for i in items)\nTypeError: unsupported operand type(s) for +: 'int' and 'NoneType'\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: None != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_full_discount (tests.Tests.test_full_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 25, in test_full_discount\n    def test_full_discount(self): self.assertEqual(line_total('1.2',5,100),Decimal('0.00'))\n                                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: None != Decimal('0.00')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: None != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: None is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nFAILED (failures=9, errors=3)\n",
+            "seconds": 0.06969083298463374
+          }
+        },
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 24.323639625043143,
+          "writes": 6,
+          "api_calls": 10,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.323417\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 1.141166\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.067625\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.172334\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.165542\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 5.774583\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 2.753791\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 93.865041\n",
+            "seconds": 0.2168300420162268
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 0.5245\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: 'item is not defined'\n  code: 'ERR_TEST_FAILURE'\n  name: 'ReferenceError'\n  stack: |-\n    mapLimit (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/mapLimit.js:20:35)\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:93)\n    Test.runInAsyncScope (node:async_hooks:214:14)\n    Test.run (node:internal/test_runner/test:1047:25)\n    Test.start (node:internal/test_runner/test:944:17)\n    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)\n  ...\n# Subtest: sync mapper and input\nnot ok 2 - sync mapper and input\n  ---\n  duration_ms: 0.120125\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:4:1'\n  failureType: 'testCodeFailure'\n  error: 'item is not defined'\n  code: 'ERR_TEST_FAILURE'\n  name: 'ReferenceError'\n  stack: |-\n    mapLimit (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/mapLimit.js:20:35)\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:4:94)\n    Test.runInAsyncScope (node:async_hooks:214:14)\n    Test.run (node:internal/test_runner/test:1047:25)\n    Test.processPendingSubtests (node:internal/test_runner/test:744:18)\n    Test.postRun (node:internal/test_runner/test:1173:19)\n    Test.run (node:internal/test_runner/test:1101:12)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.443875\n  type: 'test'\n  ...\n# Subtest: invalid limit\nok 4 - invalid limit\n  ---\n  duration_ms: 0.319042\n  type: 'test'\n  ...\n# Subtest: invalid mapper\nnot ok 5 - invalid mapper\n  ---\n  duration_ms: 1.125208\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:7:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    The error is expected to be an instance of \"TypeError\". Received \"ReferenceError\"\n    \n    Error message:\n    \n    item is not defined\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 0.502667\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    The input did not match the regular expression /boom/. Input:\n    \n    'ReferenceError: item is not defined'\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n  actual:\n  error: 'item is not defined'\n  name: 'ReferenceError'\n  stack: |-\n    mapLimit (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/mapLimit.js:20:35)\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:75)\n    Test.runInAsyncScope (node:async_hooks:214:14)\n    Test.run (node:internal/test_runner/test:1047:25)\n    Test.processPendingSubtests (node:internal/test_runner/test:744:18)\n    Test.postRun (node:internal/test_runner/test:1173:19)\n    Test.run (node:internal/test_runner/test:1101:12)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  operator: 'rejects'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:54)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nnot ok 7 - async rejection\n  ---\n  duration_ms: 0.338917\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:9:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    The input did not match the regular expression /async failure/. Input:\n    \n    'ReferenceError: item is not defined'\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n  actual:\n  error: 'item is not defined'\n  name: 'ReferenceError'\n  stack: |-\n    mapLimit (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/mapLimit.js:20:35)\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:9:48)\n    Test.runInAsyncScope (node:async_hooks:214:14)\n    Test.run (node:internal/test_runner/test:1047:25)\n    Test.processPendingSubtests (node:internal/test_runner/test:744:18)\n    Test.postRun (node:internal/test_runner/test:1173:19)\n    Test.run (node:internal/test_runner/test:1101:12)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  operator: 'rejects'\n  stack: |-\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 2\n# fail 5\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 75.6975\n",
+            "seconds": 0.13561908301198855
+          }
+        }
+      ],
+      "coding_output_budget": 4096,
+      "coding_max_turns": 10,
+      "coding_thinking": true,
+      "coding_reasoning_budget": 512,
+      "coding_history": [
+        {
+          "output_budget": 4096,
+          "thinking": true,
+          "sampling": {
+            "temperature": 0
+          },
+          "results": [
+            {
+              "id": "ttl_lru_cache",
+              "passed": false,
+              "seconds": 55.27249112498248,
+              "writes": 1,
+              "api_calls": 8,
+              "errors": [],
+              "baseline": {
+                "passed": false,
+                "returncode": 1,
+                "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nFAILED (failures=6)\n",
+                "seconds": 0.0990436669671908
+              },
+              "final": {
+                "passed": false,
+                "returncode": 1,
+                "output": "FF.F..F.\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nFAILED (failures=4)\n",
+                "seconds": 0.15669579099630937
+              }
+            },
+            {
+              "id": "money_multifile",
+              "passed": false,
+              "seconds": 38.0495766249951,
+              "writes": 0,
+              "api_calls": 7,
+              "errors": [],
+              "baseline": {
+                "passed": false,
+                "returncode": 1,
+                "output": "================================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.003s\n\nFAILED (failures=10)\n",
+                "seconds": 0.08417083398671821
+              },
+              "final": {
+                "passed": false,
+                "returncode": 1,
+                "output": "================================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/LFM3-1.7B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nFAILED (failures=10)\n",
+                "seconds": 0.09369254199555144
+              }
+            },
+            {
+              "id": "javascript_concurrency",
+              "passed": false,
+              "seconds": 43.450461542000994,
+              "writes": 0,
+              "api_calls": 6,
+              "errors": [
+                "Available file paths: mapLimit.js, README.txt, tests.js (read-only)",
+                "Available file paths: mapLimit.js, README.txt, tests.js (read-only)",
+                "HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8303 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8303,\"n_ctx\":8192}}"
+              ],
+              "baseline": {
+                "passed": false,
+                "returncode": 1,
+                "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 18.325875\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 1.589208\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.110375\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.312584\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.259292\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 7.737542\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 2.535708\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 182.976917\n",
+                "seconds": 0.24627070798305795
+              },
+              "final": {
+                "passed": false,
+                "returncode": 1,
+                "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 16.604875\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.990584\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.092917\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.440667\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.233792\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.310834\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.798375\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 80.355209\n",
+                "seconds": 0.13340537500334904
+              }
+            }
+          ]
+        }
+      ],
+      "coding_sampling": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 0
+      },
+      "coding_context_check_8192": [
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 51.73479474999476,
+          "writes": 0,
+          "api_calls": 6,
+          "errors": [
+            "HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (9138 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":9138,\"n_ctx\":8192}}"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 18.397292\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 1.344833\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.103625\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.242834\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.219791\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.854833\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.864542\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 113.819875\n",
+            "seconds": 0.28118904103757814
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 16.769916\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.949458\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.095917\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.22275\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.209459\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.561583\n  type: 'test'\n  location: '/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/LFM3-1.7B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.945416\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 81.994041\n",
+            "seconds": 0.13400262501090765
+          }
+        }
+      ],
+      "speed_context_16384": [
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 1252.03157100312,
+          "decode_tps": 100.59493587666901,
+          "ttft_seconds": 3.2725890410365537,
+          "wall_seconds": 4.5353192500188015,
+          "max_decode_gap_seconds": 0.011750957986805588,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 3271.483,
+            "prompt_per_token_ms": 0.798701904296875,
+            "prompt_per_second": 1252.03157100312,
+            "predicted_n": 128,
+            "predicted_ms": 1262.489,
+            "predicted_per_token_ms": 9.940858267716536,
+            "predicted_per_second": 100.59493587666901
+          }
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 1238.0322541254643,
+          "decode_tps": 101.53412465992065,
+          "ttft_seconds": 3.3111763750202954,
+          "wall_seconds": 4.560795458033681,
+          "max_decode_gap_seconds": 0.01243466604501009,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 3308.476,
+            "prompt_per_token_ms": 0.8077333984375,
+            "prompt_per_second": 1238.0322541254643,
+            "predicted_n": 128,
+            "predicted_ms": 1250.811,
+            "predicted_per_token_ms": 9.848905511811022,
+            "predicted_per_second": 101.53412465992065
+          }
+        }
+      ],
+      "peak_server_rss_mb_16k": 1373.265625,
+      "swap_after_16k": "vm.swapusage: total = 14336.00M  used = 13510.06M  free = 825.94M  (encrypted)"
+    },
+    {
+      "repo": "unsloth/Qwen3.5-4B-GGUF",
+      "file": "Qwen3.5-4B-Q4_K_M.gguf",
+      "bytes": 2740937888,
+      "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+      "revision": "e87f176479d0855a907a41277aca2f8ee7a09523",
+      "swap_before": "vm.swapusage: total = 16384.00M  used = 16016.19M  free = 367.81M  (encrypted)",
+      "speed": [
+        {
+          "target_tokens": 1024,
+          "actual_prompt_tokens": 1024,
+          "output_tokens": 128,
+          "prefill_tps": 435.4572790468929,
+          "decode_tps": 30.895830692793993,
+          "ttft_seconds": 2.3526060419972055,
+          "wall_seconds": 6.463511749985628,
+          "max_decode_gap_seconds": 0.12855725002009422,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1024,
+            "prompt_ms": 2351.551,
+            "prompt_per_token_ms": 2.2964365234375,
+            "prompt_per_second": 435.4572790468929,
+            "predicted_n": 128,
+            "predicted_ms": 4110.587,
+            "predicted_per_token_ms": 32.36682677165355,
+            "predicted_per_second": 30.895830692793993
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 1024,
+          "actual_prompt_tokens": 1024,
+          "output_tokens": 128,
+          "prefill_tps": 463.35868985330444,
+          "decode_tps": 40.93257952926245,
+          "ttft_seconds": 2.2110032500349917,
+          "wall_seconds": 5.3137566249934025,
+          "max_decode_gap_seconds": 0.04161008301889524,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1024,
+            "prompt_ms": 2209.951,
+            "prompt_per_token_ms": 2.1581552734375,
+            "prompt_per_second": 463.35868985330444,
+            "predicted_n": 128,
+            "predicted_ms": 3102.663,
+            "predicted_per_token_ms": 24.430417322834646,
+            "predicted_per_second": 40.93257952926245
+          },
+          "repeat": 2
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 447.54917113259773,
+          "decode_tps": 28.007053366888872,
+          "ttft_seconds": 9.153653957997449,
+          "wall_seconds": 13.688853540981654,
+          "max_decode_gap_seconds": 0.20613712503109127,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 9152.067,
+            "prompt_per_token_ms": 2.234391357421875,
+            "prompt_per_second": 447.54917113259773,
+            "predicted_n": 128,
+            "predicted_ms": 4534.572,
+            "predicted_per_token_ms": 35.705291338582676,
+            "predicted_per_second": 28.007053366888872
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 427.43694365888524,
+          "decode_tps": 38.19903864750138,
+          "ttft_seconds": 9.585658750031143,
+          "wall_seconds": 12.909271000011358,
+          "max_decode_gap_seconds": 0.0422607499640435,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 9582.7,
+            "prompt_per_token_ms": 2.3395263671875,
+            "prompt_per_second": 427.43694365888524,
+            "predicted_n": 128,
+            "predicted_ms": 3324.691,
+            "predicted_per_token_ms": 26.178669291338583,
+            "predicted_per_second": 38.19903864750138
+          },
+          "repeat": 2
+        },
+        {
+          "target_tokens": 7168,
+          "actual_prompt_tokens": 7168,
+          "output_tokens": 128,
+          "prefill_tps": 411.2683157982975,
+          "decode_tps": 37.38318857404918,
+          "ttft_seconds": 17.4315944580012,
+          "wall_seconds": 20.829731457983144,
+          "max_decode_gap_seconds": 0.07539941597497091,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7168,
+            "prompt_ms": 17429.011,
+            "prompt_per_token_ms": 2.4315026506696427,
+            "prompt_per_second": 411.2683157982975,
+            "predicted_n": 128,
+            "predicted_ms": 3397.249,
+            "predicted_per_token_ms": 26.74999212598425,
+            "predicted_per_second": 37.38318857404918
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 7168,
+          "actual_prompt_tokens": 7168,
+          "output_tokens": 128,
+          "prefill_tps": 445.7433684791532,
+          "decode_tps": 38.225448276152676,
+          "ttft_seconds": 16.084528999985196,
+          "wall_seconds": 19.406462166982237,
+          "max_decode_gap_seconds": 0.030999415961559862,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7168,
+            "prompt_ms": 16081.002,
+            "prompt_per_token_ms": 2.243443359375,
+            "prompt_per_second": 445.7433684791532,
+            "predicted_n": 128,
+            "predicted_ms": 3322.394,
+            "predicted_per_token_ms": 26.16058267716535,
+            "predicted_per_second": 38.225448276152676
+          },
+          "repeat": 2
+        }
+      ],
+      "coding": [
+        {
+          "id": "ttl_lru_cache",
+          "passed": true,
+          "seconds": 74.57239487499464,
+          "writes": 2,
+          "api_calls": 5,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=6)\n",
+            "seconds": 0.19915999996010214
+          },
+          "final": {
+            "passed": true,
+            "returncode": 0,
+            "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n",
+            "seconds": 0.0430142090190202
+          }
+        },
+        {
+          "id": "money_multifile",
+          "passed": true,
+          "seconds": 89.02176570799202,
+          "writes": 4,
+          "api_calls": 9,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "======================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.003s\n\nFAILED (failures=10)\n",
+            "seconds": 0.059927458001766354
+          },
+          "final": {
+            "passed": true,
+            "returncode": 0,
+            "output": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.000s\n\nOK\n",
+            "seconds": 0.04801237501669675
+          }
+        },
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 384.600295958051,
+          "writes": 9,
+          "api_calls": 10,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 16.346709\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.67875\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.059958\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.163708\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.146666\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.315459\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 2.826833\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 76.399125\n",
+            "seconds": 0.17297562502790242
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.133292\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        2,\n        4,\n    +   <3 empty items>\n    -   6,\n    -   8,\n    -   10\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 2\n    1: 4\n    2: 6\n    3: 8\n    4: 10\n  actual:\n    0: 2\n    1: 4\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:250)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.660583\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.063125\n  type: 'test'\n  ...\n# Subtest: invalid limit\nok 4 - invalid limit\n  ---\n  duration_ms: 0.360708\n  type: 'test'\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.073917\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 0.109167\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection.'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n  operator: 'rejects'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:54)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nnot ok 7 - async rejection\n  ---\n  duration_ms: 1.97775\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:9:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection.'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n  operator: 'rejects'\n  stack: |-\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 85.636417\n",
+            "seconds": 0.33014604198979214
+          },
+          "context_capacity": 16384
+        }
+      ],
+      "load_seconds": 4.554235082992818,
+      "tool_probes": [
+        {
+          "id": "read_before_edit",
+          "passed": true,
+          "seconds": 1.9504500410403125,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "read_file",
+                  "arguments": "{\"path\":\"src/config.py\"}"
+                },
+                "id": "SwdPB1yGHMedzBHopvhKedy0h101fYJK"
+              }
+            ]
+          }
+        },
+        {
+          "id": "search_symbol",
+          "passed": true,
+          "seconds": 1.191145874967333,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "search_code",
+                  "arguments": "{\"query\":\"normalize_user\"}"
+                },
+                "id": "jzM3YgIvQvYwCIKuXdMqoS54CD8pPovW"
+              }
+            ]
+          }
+        },
+        {
+          "id": "run_tests",
+          "passed": true,
+          "seconds": 0.6302065409836359,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "run_tests",
+                  "arguments": "{}"
+                },
+                "id": "9KbJqULDREu1h5zf8CFnIxEZ3XlEqONx"
+              }
+            ]
+          }
+        }
+      ],
+      "peak_server_rss_mb": 1760.171875,
+      "metal_log_evidence": [],
+      "swap_after": "vm.swapusage: total = 18432.00M  used = 17140.25M  free = 1291.75M  (encrypted)",
+      "initial_coding_1600": [
+        {
+          "id": "ttl_lru_cache",
+          "passed": false,
+          "seconds": 89.23376458301209,
+          "writes": 1,
+          "api_calls": 4,
+          "errors": [
+            "Unterminated string starting at: line 1 column 30 (char 29)",
+            "HTTP 500: {\"error\":{\"code\":500,\"message\":\"Failed to parse tool call arguments as JSON: [json.exception.parse_error.101] parse error at line 1, column 936: syntax error while parsing value - invalid string: missing closing quote; last read: '\\\"from collections import OrderedDict\\\\nimport time\\\\n\\\\n\\\\nclass TTLCache:\\\\n    def __init__(self, capacity, clock=time.monotonic):\\\\n        if not isinstance(capacity, int) or capacity <= 0 or isinstance(capacity, bool):\\\\n            raise ValueError(\\\\\\\"Capacity must be a positive integer\\\\\\\")\\\\n        self.capacity = capacity\\\\n        self.clock = clock\\\\n        self.items = OrderedDict()\\\\n\\\\n    def put(self, key, value, ttl):\\\\n        if ttl <= 0:\\\\n            # Remove the key if it exists, don't insert\\\\n            if key in self.items:\\\\n                del self.items[key]\\\\n            return\\\\n        self.items[key] = (value, self.clock() + ttl)\\\\n        # Move to end on put to refresh recency\\\\n        self.items.move_to_end(key)\\\\n        if len(self.items) > self.capacity:\\\\n            self._evict()\\\\n\\\\n    def get(self, key, default=None):\\\\n        item = self.items.get(key)\\\\n        if item is'\",\"type\":\"server_error\"}}"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.006s\n\nFAILED (failures=6)\n",
+            "seconds": 0.2688734999974258
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF...F..\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 1\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'x'\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=3)\n",
+            "seconds": 0.11415570898680016
+          }
+        },
+        {
+          "id": "money_multifile",
+          "passed": true,
+          "seconds": 66.89472662500339,
+          "writes": 3,
+          "api_calls": 8,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "======================================================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nFAILED (failures=10)\n",
+            "seconds": 0.07736812497023493
+          },
+          "final": {
+            "passed": true,
+            "returncode": 0,
+            "output": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.000s\n\nOK\n",
+            "seconds": 0.06393291702261195
+          }
+        },
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 156.54757762496592,
+          "writes": 7,
+          "api_calls": 10,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.772125\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 1.565458\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.112292\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.254709\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.229667\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.537667\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 2.870875\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 124.726041\n",
+            "seconds": 0.3316096670459956
+          },
+          "final": {
+            "passed": false,
+            "output": "Tests exceeded 10 second timeout",
+            "seconds": 10
+          }
+        }
+      ],
+      "coding_output_budget": 4096,
+      "coding_max_turns": 10,
+      "coding_thinking": true,
+      "coding_reasoning_budget": 512,
+      "coding_history": [
+        {
+          "output_budget": 4096,
+          "thinking": true,
+          "sampling": {
+            "temperature": 0
+          },
+          "results": []
+        }
+      ],
+      "coding_sampling": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20
+      },
+      "coding_context_check_8192": [
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 144.7499896250083,
+          "writes": 6,
+          "api_calls": 9,
+          "errors": [
+            "HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8785 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8785,\"n_ctx\":8192}}"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.653334\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.716583\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.057583\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.152292\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.146542\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.559625\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 2.692917\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 91.915916\n",
+            "seconds": 0.25509808299830183
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.243125\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        2,\n        4,\n    +   <3 empty items>\n    -   6,\n    -   8,\n    -   10\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 2\n    1: 4\n    2: 6\n    3: 8\n    4: 10\n  actual:\n    0: 2\n    1: 4\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:3:250)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.501375\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.072167\n  type: 'test'\n  ...\n# Subtest: invalid limit\nok 4 - invalid limit\n  ---\n  duration_ms: 0.396333\n  type: 'test'\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.071834\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 0.121666\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection.'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n  operator: 'rejects'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:8:54)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nnot ok 7 - async rejection\n  ---\n  duration_ms: 2.062291\n  type: 'test'\n  location: '/benchmark/fixtures/Qwen3.5-4B-Q4_K_M/javascript_concurrency/tests.js:9:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection.'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n  operator: 'rejects'\n  stack: |-\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 62.208875\n",
+            "seconds": 0.10693387495120987
+          }
+        }
+      ],
+      "speed_context_16384": [
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 465.62963277896193,
+          "decode_tps": 39.95063736995203,
+          "ttft_seconds": 8.798066749994177,
+          "wall_seconds": 11.977384249970783,
+          "max_decode_gap_seconds": 0.02920341701246798,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 8796.691,
+            "prompt_per_token_ms": 2.147629638671875,
+            "prompt_per_second": 465.62963277896193,
+            "predicted_n": 128,
+            "predicted_ms": 3178.923,
+            "predicted_per_token_ms": 25.030889763779527,
+            "predicted_per_second": 39.95063736995203
+          }
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 449.80757987269214,
+          "decode_tps": 32.83585716970941,
+          "ttft_seconds": 9.113160291977692,
+          "wall_seconds": 12.98207608400844,
+          "max_decode_gap_seconds": 0.0765886660083197,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 9106.116,
+            "prompt_per_token_ms": 2.2231728515625,
+            "prompt_per_second": 449.80757987269214,
+            "predicted_n": 128,
+            "predicted_ms": 3867.723,
+            "predicted_per_token_ms": 30.45451181102362,
+            "predicted_per_second": 32.83585716970941
+          }
+        }
+      ],
+      "peak_server_rss_mb_16k": 2750.890625,
+      "swap_after_16k": "vm.swapusage: total = 17408.00M  used = 16593.06M  free = 814.94M  (encrypted)"
+    },
+    {
+      "repo": "XHToken/Spark-X2.6-4B-GGUF",
+      "file": "Spark-X2.6-4B-Q4_K_M.gguf",
+      "bytes": 3543441312,
+      "sha256": "91cb2811aebb47ac916aa619d27d4cdd7f4143106b7917accb8ead4cd7f5cbd9",
+      "revision": "9d716770ac7477776de5f891f70cdf98b003a5cd",
+      "swap_before": "vm.swapusage: total = 18432.00M  used = 17140.25M  free = 1291.75M  (encrypted)",
+      "speed": [
+        {
+          "target_tokens": 1024,
+          "actual_prompt_tokens": 1024,
+          "output_tokens": 128,
+          "prefill_tps": 280.78210979238577,
+          "decode_tps": 25.3367392294918,
+          "ttft_seconds": 3.6664169580326416,
+          "wall_seconds": 8.698939791996963,
+          "max_decode_gap_seconds": 0.10615479201078415,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1024,
+            "prompt_ms": 3646.956,
+            "prompt_per_token_ms": 3.56148046875,
+            "prompt_per_second": 280.78210979238577,
+            "predicted_n": 128,
+            "predicted_ms": 5012.484,
+            "predicted_per_token_ms": 39.46837795275591,
+            "predicted_per_second": 25.3367392294918
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 1024,
+          "actual_prompt_tokens": 1024,
+          "output_tokens": 128,
+          "prefill_tps": 321.31992199205797,
+          "decode_tps": 26.32053982390937,
+          "ttft_seconds": 3.27847258298425,
+          "wall_seconds": 8.11577141698217,
+          "max_decode_gap_seconds": 0.3081887500011362,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1024,
+            "prompt_ms": 3186.855,
+            "prompt_per_token_ms": 3.1121630859375,
+            "prompt_per_second": 321.31992199205797,
+            "predicted_n": 128,
+            "predicted_ms": 4825.129,
+            "predicted_per_token_ms": 37.99314173228346,
+            "predicted_per_second": 26.32053982390937
+          },
+          "repeat": 2
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 309.0710776703315,
+          "decode_tps": 25.912259457209576,
+          "ttft_seconds": 13.263419082970358,
+          "wall_seconds": 18.168779416009784,
+          "max_decode_gap_seconds": 0.12256612500641495,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 13252.615,
+            "prompt_per_token_ms": 3.235501708984375,
+            "prompt_per_second": 309.0710776703315,
+            "predicted_n": 128,
+            "predicted_ms": 4901.155,
+            "predicted_per_token_ms": 38.591771653543304,
+            "predicted_per_second": 25.912259457209576
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 326.78447981152453,
+          "decode_tps": 28.30937104825143,
+          "ttft_seconds": 12.539104000024963,
+          "wall_seconds": 17.05511508299969,
+          "max_decode_gap_seconds": 0.060202332970220596,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 12534.255,
+            "prompt_per_token_ms": 3.060120849609375,
+            "prompt_per_second": 326.78447981152453,
+            "predicted_n": 128,
+            "predicted_ms": 4486.147,
+            "predicted_per_token_ms": 35.323992125984255,
+            "predicted_per_second": 28.30937104825143
+          },
+          "repeat": 2
+        },
+        {
+          "target_tokens": 7168,
+          "actual_prompt_tokens": 7168,
+          "output_tokens": 128,
+          "prefill_tps": 295.8194659360873,
+          "decode_tps": 25.569402404812365,
+          "ttft_seconds": 24.27431437501218,
+          "wall_seconds": 29.244338374992367,
+          "max_decode_gap_seconds": 0.1173864160082303,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7168,
+            "prompt_ms": 24230.995,
+            "prompt_per_token_ms": 3.3804401506696427,
+            "prompt_per_second": 295.8194659360873,
+            "predicted_n": 128,
+            "predicted_ms": 4966.874,
+            "predicted_per_token_ms": 39.10924409448819,
+            "predicted_per_second": 25.569402404812365
+          },
+          "repeat": 1
+        },
+        {
+          "target_tokens": 7168,
+          "actual_prompt_tokens": 7168,
+          "output_tokens": 128,
+          "prefill_tps": 300.97563890246175,
+          "decode_tps": 25.401996596932516,
+          "ttft_seconds": 23.827734958962537,
+          "wall_seconds": 28.86347412498435,
+          "max_decode_gap_seconds": 0.08824983303202316,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7168,
+            "prompt_ms": 23815.881,
+            "prompt_per_token_ms": 3.322528041294643,
+            "prompt_per_second": 300.97563890246175,
+            "predicted_n": 128,
+            "predicted_ms": 4999.607,
+            "predicted_per_token_ms": 39.3669842519685,
+            "predicted_per_second": 25.401996596932516
+          },
+          "repeat": 2
+        }
+      ],
+      "coding": [
+        {
+          "id": "ttl_lru_cache",
+          "passed": true,
+          "seconds": 71.15100091602653,
+          "writes": 2,
+          "api_calls": 5,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=6)\n",
+            "seconds": 0.08695316704688594
+          },
+          "final": {
+            "passed": true,
+            "returncode": 0,
+            "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n",
+            "seconds": 0.04369462496833876
+          }
+        },
+        {
+          "id": "money_multifile",
+          "passed": false,
+          "seconds": 140.90142795804422,
+          "writes": 4,
+          "api_calls": 6,
+          "errors": [],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "========================\nFAIL: test_checkout_discount (tests.Tests.test_checkout_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 9, in test_checkout_discount\n    def test_checkout_discount(self): self.assertEqual(checkout([{'price':'10','quantity':2}],10,'1.255'),Decimal('19.26'))\n                                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 21.25 != Decimal('19.26')\n\n======================================================================\nFAIL: test_discount (tests.Tests.test_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 8, in test_discount\n    def test_discount(self): self.assertEqual(line_total('19.99',3,'15'),Decimal('50.97'))\n                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50.97 != Decimal('50.97')\n\n======================================================================\nFAIL: test_empty (tests.Tests.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 11, in test_empty\n    def test_empty(self): self.assertEqual(checkout([],0,'1.005'),Decimal('1.01'))\n                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1.0 != Decimal('1.01')\n\n======================================================================\nFAIL: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_price (tests.Tests.test_invalid_price)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 14, in test_invalid_price\n    with self.assertRaises(ValueError): line_total(p,1)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_invalid_shipping (tests.Tests.test_invalid_shipping)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 24, in test_invalid_shipping\n    with self.assertRaises(ValueError): checkout([],shipping=s)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n======================================================================\nFAIL: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.02 != Decimal('0.02')\n\n======================================================================\nFAIL: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 4.0 is not an instance of <class 'decimal.Decimal'>\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nFAILED (failures=10)\n",
+            "seconds": 0.055905416957102716
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "/Spark-X2.6-4B-Q4_K_M/money_multifile/money.py\", line 39, in line_total\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n======================================================================\nERROR: test_half_up (tests.Tests.test_half_up)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 6, in test_half_up\n    def test_half_up(self): self.assertEqual(line_total('1.005',1),Decimal('1.01'))\n                                             ~~~~~~~~~~^^^^^^^^^^^\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/money.py\", line 39, in line_total\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n======================================================================\nERROR: test_input_unchanged (tests.Tests.test_input_unchanged)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 27, in test_input_unchanged\n    x=[{'price':'3.75','quantity':2}]; checkout(x,10); self.assertEqual(x,[{'price':'3.75','quantity':2}])\n                                       ~~~~~~~~^^^^^^\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/checkout.py\", line 36, in checkout\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n======================================================================\nERROR: test_invalid_discount (tests.Tests.test_invalid_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 20, in test_invalid_discount\n    with self.assertRaises(ValueError): line_total('1',1,d)\n                                        ~~~~~~~~~~^^^^^^^^^\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/money.py\", line 39, in line_total\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n======================================================================\nERROR: test_invalid_quantity (tests.Tests.test_invalid_quantity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 17, in test_invalid_quantity\n    with self.assertRaises(ValueError): line_total('1',q)\n                                        ~~~~~~~~~~^^^^^^^\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/money.py\", line 39, in line_total\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n======================================================================\nERROR: test_round_per_line (tests.Tests.test_round_per_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 10, in test_round_per_line\n    def test_round_per_line(self): self.assertEqual(checkout([{'price':'0.005','quantity':1}]*2),Decimal('0.02'))\n                                                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/checkout.py\", line 36, in checkout\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n======================================================================\nERROR: test_type (tests.Tests.test_type)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/tests.py\", line 7, in test_type\n    def test_type(self): self.assertIsInstance(line_total('2',2),Decimal)\n                                               ~~~~~~~~~~^^^^^^^\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/money_multifile/money.py\", line 39, in line_total\n    if not quantity.is_finite() or quantity < 0 or not quantity.is_integer():\n                                                       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'decimal.Decimal' object has no attribute 'is_integer'\n\n----------------------------------------------------------------------\nRan 12 tests in 0.003s\n\nFAILED (errors=9)\n",
+            "seconds": 0.09941054100636393
+          }
+        },
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 196.19001812499482,
+          "writes": 4,
+          "api_calls": 10,
+          "errors": [
+            "Available file paths: mapLimit.js, README.txt, tests.js (read-only)"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.107833\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 1.556459\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.097916\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.260667\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.242167\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.059417\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.74125\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 119.512875\n",
+            "seconds": 0.3358416249975562
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.106125\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        2,\n        4,\n    -   6,\n    -   8,\n    -   10\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 2\n    1: 4\n    2: 6\n    3: 8\n    4: 10\n  actual:\n    0: 2\n    1: 4\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:250)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 0.740708\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.10275\n  type: 'test'\n  ...\n# Subtest: invalid limit\nok 4 - invalid limit\n  ---\n  duration_ms: 0.431584\n  type: 'test'\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.115584\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nok 6 - stop after rejection\n  ---\n  duration_ms: 4.954708\n  type: 'test'\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.639\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 6\n# fail 1\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 83.430042\n",
+            "seconds": 0.16505308297928423
+          },
+          "context_capacity": 16384
+        }
+      ],
+      "load_seconds": 9.942303124989849,
+      "tool_probes": [
+        {
+          "id": "read_before_edit",
+          "passed": true,
+          "seconds": 2.1721717919572257,
+          "message": {
+            "role": "assistant",
+            "content": "I'll start by reading the file as requested.",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "read_file",
+                  "arguments": "{\"path\":\"src/config.py\"}"
+                },
+                "id": "zt7d3YDzUKz3Z4iKzEv0qYtJBPcdCuUM"
+              }
+            ]
+          }
+        },
+        {
+          "id": "search_symbol",
+          "passed": true,
+          "seconds": 0.7533064589952119,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "search_code",
+                  "arguments": "{\"query\":\"normalize_user\"}"
+                },
+                "id": "6mcUb6gaUpixXQjPIXD5dII1i1FqjahS"
+              }
+            ]
+          }
+        },
+        {
+          "id": "run_tests",
+          "passed": true,
+          "seconds": 0.404261082992889,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "run_tests",
+                  "arguments": "{}"
+                },
+                "id": "eGNvk1Wa7NXZl6evfXA0YkVxrcHorYJo"
+              }
+            ]
+          }
+        }
+      ],
+      "coding_history": [
+        {
+          "output_budget": 1600,
+          "thinking": false,
+          "sampling": {
+            "temperature": 0
+          },
+          "results": [
+            {
+              "id": "ttl_lru_cache",
+              "passed": false,
+              "seconds": 121.71810687502148,
+              "writes": 3,
+              "api_calls": 8,
+              "errors": [],
+              "baseline": {
+                "passed": false,
+                "returncode": 1,
+                "output": "FF.F.FFF\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_expired_boundary (tests.Tests.test_expired_boundary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 12, in test_expired_boundary\n    self.c.put('a',1,2); self.now=2; self.assertEqual(self.c.get('a','missing'),'missing')\n                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 1 != 'missing'\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_nonpositive_ttl (tests.Tests.test_nonpositive_ttl)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 17, in test_nonpositive_ttl\n    self.c.put('a',1,10); self.c.put('a',2,0); self.assertEqual(self.c.get('a','x'),'x')\n                                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 2 != 'x'\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_validation (tests.Tests.test_validation)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 24, in test_validation\n    with self.assertRaises(ValueError): TTLCache(v)\n         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.004s\n\nFAILED (failures=6)\n",
+                "seconds": 0.4913394169998355
+              },
+              "final": {
+                "passed": false,
+                "returncode": 1,
+                "output": "F..F..F.\n======================================================================\nFAIL: test_expired_before_eviction (tests.Tests.test_expired_before_eviction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 15, in test_expired_before_eviction\n    self.assertEqual(self.c.get('a'),1); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_lru_get (tests.Tests.test_lru_get)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 7, in test_lru_get\n    self.assertEqual(self.c.get('a'),1); self.assertIsNone(self.c.get('b')); self.assertEqual(self.c.get('c'),3)\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n======================================================================\nFAIL: test_update_recency (tests.Tests.test_update_recency)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/ttl_lru_cache/tests.py\", line 10, in test_update_recency\n    self.assertEqual(self.c.get('a'),4); self.assertIsNone(self.c.get('b'))\n                                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 2 is not None\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=3)\n",
+                "seconds": 0.22375937504693866
+              }
+            }
+          ]
+        }
+      ],
+      "coding_output_budget": 4096,
+      "coding_max_turns": 10,
+      "coding_thinking": true,
+      "coding_reasoning_budget": 512,
+      "coding_sampling": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 0
+      },
+      "coding_context_check_8192": [
+        {
+          "id": "javascript_concurrency",
+          "passed": false,
+          "seconds": 126.46668062498793,
+          "writes": 5,
+          "api_calls": 8,
+          "errors": [
+            "HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8342 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8342,\"n_ctx\":8192}}"
+          ],
+          "baseline": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 17.464667\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly equal:\n    \n    5 !== 2\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: 2\n  actual: 5\n  operator: 'strictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:229)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nok 2 - sync mapper and input\n  ---\n  duration_ms: 1.110667\n  type: 'test'\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.061792\n  type: 'test'\n  ...\n# Subtest: invalid limit\nnot ok 4 - invalid limit\n  ---\n  duration_ms: 0.172292\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:6:1'\n  failureType: 'testCodeFailure'\n  error: 'Missing expected rejection (RangeError).'\n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  stack: |-\n    async TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:6:75)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.16375\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nnot ok 6 - stop after rejection\n  ---\n  duration_ms: 6.271625\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:8:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n        0,\n    +   1,\n    +   2,\n    +   3\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 0\n  actual:\n    0: 0\n    1: 1\n    2: 2\n    3: 3\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:8:174)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 1.674083\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 4\n# fail 3\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 85.554375\n",
+            "seconds": 0.2539611250394955
+          },
+          "final": {
+            "passed": false,
+            "returncode": 1,
+            "output": "TAP version 13\n# Subtest: concurrency and order\nnot ok 1 - concurrency and order\n  ---\n  duration_ms: 16.496542\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n    +   undefined,\n    +   undefined\n    -   2,\n    -   4,\n    -   6,\n    -   8,\n    -   10\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 2\n    1: 4\n    2: 6\n    3: 8\n    4: 10\n  actual:\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:3:250)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n# Subtest: sync mapper and input\nnot ok 2 - sync mapper and input\n  ---\n  duration_ms: 0.683959\n  type: 'test'\n  location: '/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:4:1'\n  failureType: 'testCodeFailure'\n  error: |-\n    Expected values to be strictly deep-equal:\n    + actual - expected\n    \n      [\n    +   undefined,\n    +   undefined,\n    +   undefined\n    -   2,\n    -   5,\n    -   8\n      ]\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected:\n    0: 2\n    1: 5\n    2: 8\n  actual:\n  operator: 'deepStrictEqual'\n  stack: |-\n    TestContext.<anonymous> (/benchmark/fixtures/Spark-X2.6-4B-Q4_K_M/javascript_concurrency/tests.js:4:78)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)\n  ...\n# Subtest: empty\nok 3 - empty\n  ---\n  duration_ms: 0.075333\n  type: 'test'\n  ...\n# Subtest: invalid limit\nok 4 - invalid limit\n  ---\n  duration_ms: 0.341625\n  type: 'test'\n  ...\n# Subtest: invalid mapper\nok 5 - invalid mapper\n  ---\n  duration_ms: 0.073375\n  type: 'test'\n  ...\n# Subtest: stop after rejection\nok 6 - stop after rejection\n  ---\n  duration_ms: 5.040625\n  type: 'test'\n  ...\n# Subtest: async rejection\nok 7 - async rejection\n  ---\n  duration_ms: 2.725708\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 5\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 65.225708\n",
+            "seconds": 0.10196220799116418
+          }
+        }
+      ],
+      "speed_context_16384": [
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 264.3136897584511,
+          "decode_tps": 31.55565659991527,
+          "ttft_seconds": 15.5065082499641,
+          "wall_seconds": 19.52553770801751,
+          "max_decode_gap_seconds": 0.06107541604433209,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 15496.738,
+            "prompt_per_token_ms": 3.78338330078125,
+            "prompt_per_second": 264.3136897584511,
+            "predicted_n": 128,
+            "predicted_ms": 4024.635,
+            "predicted_per_token_ms": 31.690039370078743,
+            "predicted_per_second": 31.55565659991527
+          }
+        },
+        {
+          "target_tokens": 4096,
+          "actual_prompt_tokens": 4096,
+          "output_tokens": 128,
+          "prefill_tps": 315.7926062897314,
+          "decode_tps": 32.34081823798055,
+          "ttft_seconds": 12.991434041992761,
+          "wall_seconds": 16.905068332969677,
+          "max_decode_gap_seconds": 0.045909416978247464,
+          "decode_gaps_over_2s": 0,
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4096,
+            "prompt_ms": 12970.538,
+            "prompt_per_token_ms": 3.16663525390625,
+            "prompt_per_second": 315.7926062897314,
+            "predicted_n": 128,
+            "predicted_ms": 3926.926,
+            "predicted_per_token_ms": 30.92067716535433,
+            "predicted_per_second": 32.34081823798055
+          }
+        }
+      ],
+      "peak_server_rss_mb_16k": 3432.984375,
+      "swap_after_16k": "vm.swapusage: total = 15360.00M  used = 14574.25M  free = 785.75M  (encrypted)"
+    }
+  ],
+  "coding_check_note": "Final GGUF coding scores use 4096 max output tokens per turn, up to 512 reasoning tokens, brief explanations, and model-author sampling settings (temperature 0.6 for LFM3/Qwen, 1.0 for Spark; top_p 0.95). Speed tests measure raw completion throughput without reasoning overhead. Superseded greedy calibration checks retained separately and excluded from final coding ranking. MLX quality checks are a separate thinking-disabled greedy runtime test.",
+  "finished_at": "2026-11-09T14:34:48.232709+00:00",
+  "context_check_note": "Cache and money tasks use 8192 context capacity; the concurrency task was rerun with 16384 capacity for all three models because all initial sessions hit the 8192-token context limit. Other coding parameters are unchanged. Additional 4K-input speed trials at 16384 capacity are saved separately."
+}

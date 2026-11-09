@@ -4,6 +4,20 @@ Benchmark text LLM speed and tool-based code editing, then generate Markdown, HT
 
 The project grew out of a three-model coding/speed comparison on an M2 Pro. The reusable runner is a new implementation; the [original measurements](docs/original-m2-pro-results.md) came from the earlier local harness.
 
+## Example: measured results on an Apple M2 Pro
+
+Measured **November 9, 2026** on an **M2 Pro (10 CPU / 16 GPU cores), 16 GB unified memory**, using llama.cpp Metal and Q4_K_M models. Speed figures are medians of two warm-engine runs: **4,096 fresh input tokens, 128 output tokens, 16K context capacity**, with prompt reuse disabled.
+
+| Model | Base-model release | Prefill tok/s | Decode tok/s | First output | Coding checks | Full coding tasks |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| LFM3 1.7B | 2026-10-27 | **1,245.0** | **101.1** | **3.29 s** | 12/27 | 0/3 |
+| Qwen3.5 4B | 2026-03-02 | 457.7 | 36.4 | 8.96 s | **24/27** | **2/3** |
+| Spark X2.6 4B | 2026-10-21 | 290.1 | 31.9 | 14.25 s | 17/27 | 1/3 |
+
+Qwen gave the best coding results of these tested configurations; LFM3 generated plain output fastest. These are **three small synthetic coding projects**, not SWE-bench. Coding used a 512-token reasoning budget with 8K context for cache/money and 16K for concurrency. One long Qwen tool response slowed to **6.47 tok/s**; the short trials do not establish stable heavy-use performance. No hosted Claude/GPT model was tested.
+
+The [example results folder](examples/results/apple-m2-pro-16gb/README.md) contains the [full report](examples/results/apple-m2-pro-16gb/report.md), [CSV measurements](examples/results/apple-m2-pro-16gb/measurements.csv), summaries, methodology, raw timing records and coding transcripts. The additional MLX check is documented separately because its coding settings differed. These historical measurements came from the earlier Mac-specific harness, not the portable CLI in this repository. Personal filesystem paths in published evidence have been anonymized; measurements are unchanged.
+
 ## What it measures
 
 - Backend-reported prefill/decode tokens per second, where available.

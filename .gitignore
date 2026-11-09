@@ -8,6 +8,6 @@ dist/
 .env.*
 !.env.example
 config.local.json
-results/
+/results/
 .DS_Store
 .coverage

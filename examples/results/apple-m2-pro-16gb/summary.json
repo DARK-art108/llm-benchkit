@@ -1,0 +1,250 @@
+[
+  {
+    "model": "LFM3 1.7B",
+    "backend": "llama.cpp",
+    "quantization": "Q4_K_M",
+    "release_date": "2026-10-27",
+    "coding_profile": "512-token reasoning, author sampling",
+    "coding_tasks_passed": 0,
+    "coding_tasks_total": 3,
+    "unit_cases_passed": 12,
+    "unit_cases_total": 27,
+    "tool_probes_passed": 3,
+    "coding_seconds": 168.38267962500686,
+    "load_seconds": 1.0316989999846555,
+    "peak_server_rss_mb_16k": 1373.265625,
+    "contexts": [
+      {
+        "input_tokens": 1024,
+        "context_capacity": 8192,
+        "prefill_tps": 1168.83778700618,
+        "decode_tps": 110.86986990729139,
+        "ttft_seconds": 0.8825242084858473,
+        "decode_min": 110.80023067386605,
+        "decode_max": 110.93950914071672,
+        "max_decode_gap_seconds": 0.010720000020228326,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": 8192,
+        "prefill_tps": 1264.338112593387,
+        "decode_tps": 105.36530330935477,
+        "ttft_seconds": 3.2408018955029547,
+        "decode_min": 104.17196412547226,
+        "decode_max": 106.5586424932373,
+        "max_decode_gap_seconds": 0.021691540954634547,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 7168,
+        "context_capacity": 8192,
+        "prefill_tps": 1235.7253880975213,
+        "decode_tps": 103.1390920960344,
+        "ttft_seconds": 5.802169229486026,
+        "decode_min": 102.45537947213697,
+        "decode_max": 103.82280471993185,
+        "max_decode_gap_seconds": 0.01228925003670156,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": 16384,
+        "prefill_tps": 1245.0319125642923,
+        "decode_tps": 101.06453026829483,
+        "ttft_seconds": 3.2918827080284245,
+        "decode_min": 100.59493587666901,
+        "decode_max": 101.53412465992065,
+        "max_decode_gap_seconds": 0.01243466604501009,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      }
+    ]
+  },
+  {
+    "model": "Qwen3.5 4B",
+    "backend": "llama.cpp",
+    "quantization": "Q4_K_M",
+    "release_date": "2026-03-02",
+    "coding_profile": "512-token reasoning, author sampling",
+    "coding_tasks_passed": 2,
+    "coding_tasks_total": 3,
+    "unit_cases_passed": 24,
+    "unit_cases_total": 27,
+    "tool_probes_passed": 3,
+    "coding_seconds": 548.1944565410377,
+    "load_seconds": 4.554235082992818,
+    "peak_server_rss_mb_16k": 2750.890625,
+    "contexts": [
+      {
+        "input_tokens": 1024,
+        "context_capacity": 8192,
+        "prefill_tps": 449.40798445009864,
+        "decode_tps": 35.914205111028224,
+        "ttft_seconds": 2.2818046460160986,
+        "decode_min": 30.895830692793993,
+        "decode_max": 40.93257952926245,
+        "max_decode_gap_seconds": 0.12855725002009422,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": 8192,
+        "prefill_tps": 437.4930573957415,
+        "decode_tps": 33.103046007195125,
+        "ttft_seconds": 9.369656354014296,
+        "decode_min": 28.007053366888872,
+        "decode_max": 38.19903864750138,
+        "max_decode_gap_seconds": 0.20613712503109127,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 7168,
+        "context_capacity": 8192,
+        "prefill_tps": 428.50584213872537,
+        "decode_tps": 37.80431842510093,
+        "ttft_seconds": 16.758061728993198,
+        "decode_min": 37.38318857404918,
+        "decode_max": 38.225448276152676,
+        "max_decode_gap_seconds": 0.07539941597497091,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": 16384,
+        "prefill_tps": 457.71860632582707,
+        "decode_tps": 36.393247269830724,
+        "ttft_seconds": 8.955613520985935,
+        "decode_min": 32.83585716970941,
+        "decode_max": 39.95063736995203,
+        "max_decode_gap_seconds": 0.0765886660083197,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      }
+    ]
+  },
+  {
+    "model": "Spark X2.6 4B",
+    "backend": "llama.cpp",
+    "quantization": "Q4_K_M",
+    "release_date": "2026-10-21",
+    "coding_profile": "512-token reasoning, author sampling",
+    "coding_tasks_passed": 1,
+    "coding_tasks_total": 3,
+    "unit_cases_passed": 17,
+    "unit_cases_total": 27,
+    "tool_probes_passed": 3,
+    "coding_seconds": 408.2424469990656,
+    "load_seconds": 9.942303124989849,
+    "peak_server_rss_mb_16k": 3432.984375,
+    "contexts": [
+      {
+        "input_tokens": 1024,
+        "context_capacity": 8192,
+        "prefill_tps": 301.05101589222187,
+        "decode_tps": 25.828639526700584,
+        "ttft_seconds": 3.472444770508446,
+        "decode_min": 25.3367392294918,
+        "decode_max": 26.32053982390937,
+        "max_decode_gap_seconds": 0.3081887500011362,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": 8192,
+        "prefill_tps": 317.92777874092803,
+        "decode_tps": 27.110815252730504,
+        "ttft_seconds": 12.90126154149766,
+        "decode_min": 25.912259457209576,
+        "decode_max": 28.30937104825143,
+        "max_decode_gap_seconds": 0.12256612500641495,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 7168,
+        "context_capacity": 8192,
+        "prefill_tps": 298.3975524192745,
+        "decode_tps": 25.485699500872443,
+        "ttft_seconds": 24.05102466698736,
+        "decode_min": 25.401996596932516,
+        "decode_max": 25.569402404812365,
+        "max_decode_gap_seconds": 0.1173864160082303,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": 16384,
+        "prefill_tps": 290.05314802409123,
+        "decode_tps": 31.94823741894791,
+        "ttft_seconds": 14.24897114597843,
+        "decode_min": 31.55565659991527,
+        "decode_max": 32.34081823798055,
+        "max_decode_gap_seconds": 0.06107541604433209,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      }
+    ]
+  },
+  {
+    "model": "Qwen3.5 4B",
+    "backend": "MLX",
+    "quantization": "4-bit",
+    "release_date": "2026-03-02",
+    "coding_profile": "thinking off, greedy sampling",
+    "coding_tasks_passed": 0,
+    "coding_tasks_total": 3,
+    "unit_cases_passed": 19,
+    "unit_cases_total": 27,
+    "tool_probes_passed": 3,
+    "coding_seconds": 588.6817105000373,
+    "load_seconds": 2.875798249966465,
+    "peak_server_rss_mb_16k": null,
+    "contexts": [
+      {
+        "input_tokens": 1024,
+        "context_capacity": null,
+        "prefill_tps": 338.92724586676934,
+        "decode_tps": 54.959000990321925,
+        "ttft_seconds": 3.022779332968639,
+        "decode_min": 53.86254971679095,
+        "decode_max": 56.0554522638529,
+        "max_decode_gap_seconds": 0.022334415989462286,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 4096,
+        "context_capacity": null,
+        "prefill_tps": 345.5924307248287,
+        "decode_tps": 52.21916749600055,
+        "ttft_seconds": 11.854373353999108,
+        "decode_min": 51.49642802360603,
+        "decode_max": 52.941906968395074,
+        "max_decode_gap_seconds": 0.023760583018884063,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      },
+      {
+        "input_tokens": 7168,
+        "context_capacity": null,
+        "prefill_tps": 336.4494317080513,
+        "decode_tps": 48.675156499998806,
+        "ttft_seconds": 21.315895416017156,
+        "decode_min": 46.284289818443064,
+        "decode_max": 51.06602318155454,
+        "max_decode_gap_seconds": 0.029424250009469688,
+        "decode_gaps_over_2s": 0,
+        "repetitions": 2
+      }
+    ]
+  }
+]
