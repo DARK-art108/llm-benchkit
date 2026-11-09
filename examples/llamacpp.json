@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "id": "my-gguf",
+      "provider": "llamacpp",
+      "base_url": "http://127.0.0.1:8080",
+      "model": "local-model",
+      "request": {"temperature": 0.6, "top_p": 0.95},
+      "metadata": {"quantization": "Q4_K_M", "engine_version": "record commit/version", "model_sha256": "record-me"}
+    }
+  ],
+  "benchmark": {"input_tokens": [1024, 4096], "output_tokens": 128, "repeats": 3, "warmup": 1},
+  "environment": {"hardware": "record CPU/GPU/RAM here", "context_capacity": 8192, "engine_flags": "record actual launch flags here"}
+}

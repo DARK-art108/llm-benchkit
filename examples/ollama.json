@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "id": "my-local-model",
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "model": "REPLACE_WITH_INSTALLED_MODEL_TAG",
+      "request": {"options": {"temperature": 0, "num_ctx": 8192}},
+      "metadata": {"quantization": "record-me", "engine_version": "record-me"}
+    }
+  ],
+  "benchmark": {"input_chars": [1024, 8192, 16384], "output_tokens": 128, "repeats": 3, "warmup": 1},
+  "environment": {"hardware": "record CPU/GPU/RAM here", "power_mode": "record-me"}
+}

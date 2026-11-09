@@ -1,0 +1,15 @@
+[
+  {
+    "id": "fix-addition",
+    "instructions": "Repair add(a, b) to return the sum. Preserve its name and arguments.",
+    "source_files": {"solution.py": "def add(a, b):\n    return a - b\n"},
+    "test_files": {
+      "tests.py": "import unittest\nfrom solution import add\nclass Tests(unittest.TestCase):\n def test_positive(self): self.assertEqual(add(2, 3), 5)\n def test_negative(self): self.assertEqual(add(-1, -2), -3)\n",
+      "runner.py": "import json, sys, unittest\nfrom pathlib import Path\nsys.path.insert(0, str(Path(__file__).parent))\nr=unittest.TextTestRunner().run(unittest.defaultTestLoader.loadTestsFromName('tests'))\nprint('BENCHKIT_RESULT='+json.dumps({'total':r.testsRun,'passed':r.testsRun-len(r.errors)-len(r.failures)-len(r.skipped)}))\nsys.exit(0 if r.wasSuccessful() and not r.skipped else 1)\n"
+    },
+    "image": "python:3.12-slim",
+    "command": ["python", "-I", "-B", "runner.py"],
+    "expected_checks": 2,
+    "result_format": "marker"
+  }
+]

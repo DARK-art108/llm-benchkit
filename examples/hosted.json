@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "id": "hosted-compatible-model",
+      "provider": "openai",
+      "base_url": "https://YOUR_PROVIDER_HOST/v1",
+      "model": "YOUR_MODEL_ID",
+      "api_key_env": "BENCHMARK_API_KEY",
+      "token_limit_field": "max_completion_tokens",
+      "request": {},
+      "metadata": {"reasoning_profile": "record your provider/model defaults or overrides"}
+    },
+    {
+      "id": "claude-model",
+      "provider": "anthropic",
+      "base_url": "https://api.anthropic.com/v1",
+      "model": "YOUR_CLAUDE_MODEL_ID",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "request": {}
+    }
+  ],
+  "benchmark": {"input_chars": [1024, 8192], "output_tokens": 256, "repeats": 3, "warmup": 1},
+  "environment": {"network": "record location/connection if relevant"}
+}
